@@ -1,0 +1,30 @@
+{
+   "background": {
+      "scripts": [ "core/bg.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "img/128.png"
+      },
+      "default_title": "__MSG_title__"
+   },
+   "content_scripts": [ {
+      "js": [ "core/styles.js", "core/cs.js" ],
+      "matches": [ "*://vk.com/*", "*://oauth.vk.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_desc__",
+   "homepage_url": "https://sites.google.com/view/promo-extensions-welcome",
+   "icons": {
+      "128": "img/128.png",
+      "48": "img/48.png",
+      "64": "img/64.png"
+   },
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "permissions": [ "tabs", "http://*/*", "https://*/*", "browsingData", "cookies", "storage", "webRequest", "webRequestBlocking" ],
+   "short_name": "__MSG_shortname__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2018.08.07.3"
+}
